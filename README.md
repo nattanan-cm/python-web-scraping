@@ -44,12 +44,6 @@ scrapy genspider book_spider <your_scrape_site>
 scrapy genspider book_spider books.toscrape.com # For this example
 ```
 
-### Run spider
-```sh
-scrapy crawl <your_spider_name>
-scrapy crawl book_spider # For this example
-```
-
 ### Configure Scrapy shell
 scrapy.cfg
 ```sh
@@ -57,6 +51,20 @@ scrapy.cfg
 default = book_scraping.settings
 shell = ipython # Right here
 ```
+
+### Run spider
+```sh
+scrapy crawl <your_spider_name>
+scrapy crawl book_spider # For this example
+```
+
+### Generate file
+```sh
+scrapy crawl <your_spider_name> -O <your_file_name>.json
+scrapy crawl book_spider -O bookdata.csv # For this Example
+```
+
+
 
 
 ## Contributing
