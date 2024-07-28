@@ -52,7 +52,7 @@ scrapy crawl book_spider # For this example
 
 ### Configure Scrapy shell
 scrapy.cfg
-```
+```sh
 [settings]
 default = book_scraping.settings
 shell = ipython # Right here
