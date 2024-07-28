@@ -55,7 +55,7 @@ scrapy.cfg
 ```
 [settings]
 default = book_scraping.settings
-shell = ipython
+shell = ipython # Right here
 ```
 
 
